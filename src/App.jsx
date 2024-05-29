@@ -15,7 +15,7 @@ const App = () => {
 
   useEffect(() => {
     const newPeer = new Peer(undefined, {
-      host: "https://peerjs-cyuj.onrender.com",
+      host: "https://peer-js-pi.vercel.app",
       port: 3001,
       path: "/peerjs",
     });

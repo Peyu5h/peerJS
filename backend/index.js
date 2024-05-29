@@ -24,6 +24,10 @@ const peerServer = ExpressPeerServer(server, {
   debug: true,
 });
 
+app.get("/hello", (req, res) => {
+  res.send("Hello World");
+});
+
 app.use("/peerjs", peerServer); // specify the path for PeerServer (to use for frontend)
 
 io.on("connection", (socket) => {
